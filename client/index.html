@@ -21,8 +21,25 @@
   </head>
   <body>
     <h1> test </h1>
-    <button type="button" ng-click="currentLocation()" id="myLocation">My Location</button>
-    <input type ="text" id="desLocation" placeholder="please enter your destination"/>
+    <div id = 'content'>
+      <button type="button" ng-click="currentLocation()" id="myLocation">My Location</button>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control" id="desLocation" placeholder="Enter your destination">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" ng-click="submitLocation()" id="myDestination">Submit</button>
+            </span>
+          </div><!-- /input-group -->
+          <div class="input-group">
+            <input type="text" class="form-control" id="desLocation" placeholder="Add User ID">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" ng-click="submitLocation()" id="myDestination">Submit</button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div>  
+    </div>
     <div id = 'map'></div>
   </body>
 </html>
