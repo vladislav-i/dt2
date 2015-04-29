@@ -1,0 +1,28 @@
+<html lang="en" ng-app='app' ng-controller="driversController">
+  <head>
+    <title> DT2 </title>
+     <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+     <!-- define angular -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+     <!-- clientjs -->
+    <script src="app/app.js"></script>
+  </head>
+  <body>
+    <h1> test </h1>
+    <button type="button" ng-click="currentLocation()" id="myLocation">My Location</button>
+    <input type ="text" id="desLocation" placeholder="please enter your destination"/>
+    <div id = 'map'></div>
+  </body>
+</html>
